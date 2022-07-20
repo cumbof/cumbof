@@ -4,4 +4,4 @@ I'm Fabio, a Software Engineer with a PhD in [Computer Science and Automation En
 
 Have a look at my professional profile, including academic path and achievements, on my [personal web space](https://cumbof.github.io/).
 
-<img src="https://komarev.com/ghpvc/?username=antonkomarev&style=flat&color=blue">
+<img src="https://komarev.com/ghpvc/?username=cumbof&style=flat&color=blue&label=Profile+views">
