@@ -22,7 +22,7 @@ jobs:
           cache: 'pip'
 
       - name: Install dependencies
-        run: pip install scholarly matplotlib
+        run: pip install scholarly
 
       - name: Run update script
         run: python scripts/update_readme.py
@@ -31,7 +31,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add README.md charts/
+          git add README.md
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
