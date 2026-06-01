@@ -5,7 +5,7 @@ import re
 import sys
 
 try:
-    from scholarly import scholarly
+    from scholarly import scholarly, ProxyGenerator
 except ImportError:
     print("scholarly is not installed. Run: pip install scholarly", file=sys.stderr)
     sys.exit(1)
@@ -17,6 +17,14 @@ END_MARKER = "<!-- SCHOLAR-END -->"
 
 
 def fetch_author():
+    try:
+        pg = ProxyGenerator()
+        if pg.FreeProxies():
+            scholarly.use_proxy(pg)
+            print("Using free proxy to reach Google Scholar.")
+    except Exception as proxy_exc:
+        print(f"Proxy setup skipped: {proxy_exc}", file=sys.stderr)
+
     print(f"Fetching Google Scholar profile for ID: {SCHOLAR_ID} ...")
     author = scholarly.search_author_id(SCHOLAR_ID)
     return scholarly.fill(author, sections=["basics", "indices"])
@@ -74,7 +82,8 @@ def main():
         author = fetch_author()
     except Exception as exc:
         print(f"Failed to fetch Scholar data: {exc}", file=sys.stderr)
-        sys.exit(1)
+        print("Skipping README update — Scholar may be temporarily unavailable.", file=sys.stderr)
+        sys.exit(0)
 
     update_readme(build_section(author))
 
