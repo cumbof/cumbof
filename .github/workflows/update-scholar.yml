@@ -21,7 +21,7 @@ jobs:
           python-version: '3.12'
 
       - name: Install dependencies
-        run: pip install scholarly
+        run: pip install scholarly "httpx<0.28"
 
       - name: Run update script
         run: python scripts/update_readme.py
