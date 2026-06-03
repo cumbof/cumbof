@@ -6,7 +6,7 @@ Software Engineer with a PhD in [Computer Science and Automation Engineering](ht
 
 **Research interests:** [Bioinformatics](https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:bioinformatics) · [Metagenomics](https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:metagenomics) · [Vector Symbolic Architectures](https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:vector_symbolic_architectures) · [Hyperdimensional Computing](https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:hyperdimensional_computing)
 
-![Citations](https://img.shields.io/badge/Citations-8170-blue?style=flat-square) ![h-index](https://img.shields.io/badge/h--index-24-green?style=flat-square) ![i10-index](https://img.shields.io/badge/i10--index-32-orange?style=flat-square)
+![Citations](https://img.shields.io/badge/Citations-8224-blue?style=flat-square) ![h-index](https://img.shields.io/badge/h--index-24-green?style=flat-square) ![i10-index](https://img.shields.io/badge/i10--index-32-orange?style=flat-square)
 
 <!-- SCHOLAR-END -->
 
